@@ -19,12 +19,12 @@ Communication Strategy Tree - Onri
 │  ├─ Arguably – defensible, yet contestable, speaker-oriented epistemic stance (hedged assertion)
 │  └─ Relatively – context-bound qualification
 │
-├─ Extent / Completeness
+├─ Extent/ Completeness
 │  ├─ Virtually – almost wholly (≈ 99 %)
 │  ├─ Practically – nearly, within pragmatic limits (≈ 95 %)
 │  └─ Effectively – operationally equivalent in outcome (≈ 95–99 %), results-focused
 │
-├─ Modal / Counterfactual Stance
+├─ Modal/ Counterfactual Stance
 │  ├─ Hypothetically – speculative scenario testing
 │  ├─ Theoretically – arithmetically supported, by logic or data-pattern model
 │  ├─ Suppose – assumed premise posited for exploration
