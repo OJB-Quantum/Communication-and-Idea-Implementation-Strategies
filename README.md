@@ -63,6 +63,31 @@ Communication Strategy Tree - by Onri
 
 ---
 
+Functional Analogy Categories to Help Explain Virtually Anything to a General Audience - by Onri
+
+```
+└─ Root
+   ├─ Analogy Families
+   │  ├─ LEGO analogy
+   │  ├─ Gravity analogy
+   │  ├─ Basketball analogy
+   │  ├─ Football/soccer analogy
+   │  ├─ Mechanical analogy
+   │  └─ Car-related analogies
+   ├─ Abstraction & Convergence
+   │  ├─ Heat map
+   │  └─ “Spherical cow”
+   ├─ Perception & Analysis
+   │  ├─ Can be felt or seen
+   │  └─ Analyzed with dots in a finite dimension
+   │     └─ Often two-dimensional (2D)
+   │        └─ Exception: three-dimensional (3D) chess
+   └─ Communication Reminder
+      └─ “Say it with your chest.”
+```
+
+---
+
 Idea Formation Pathways - by Onri 
 
 ```
@@ -87,29 +112,4 @@ Scaffolding
 └─ Draft scatter‑plot (based on the initial tables)
     └─ Refine scatter‑plot (incorporate data produced by any simulation or literature search)
         └─ Comprehensive scatter‑plot (final result)
-```
-
----
-
-Functional Analogy Categories to Help Explain Virtually Anything to a General Audience - by Onri
-
-```
-└─ Root
-   ├─ Analogy Families
-   │  ├─ LEGO analogy
-   │  ├─ Gravity analogy
-   │  ├─ Basketball analogy
-   │  ├─ Football/soccer analogy
-   │  ├─ Mechanical analogy
-   │  └─ Car-related analogies
-   ├─ Abstraction & Convergence
-   │  ├─ Heat map
-   │  └─ “Spherical cow”
-   ├─ Perception & Analysis
-   │  ├─ Can be felt or seen
-   │  └─ Analyzed with dots in a finite dimension
-   │     └─ Often two-dimensional (2D)
-   │        └─ Exception: three-dimensional (3D) chess
-   └─ Communication Reminder
-      └─ “Say it with your chest.”
 ```
