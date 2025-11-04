@@ -65,42 +65,31 @@ Communication Strategy Tree - By Onri
 
 Idea Formation Pathways by Onri Jay Benally
 
-$$
-\require{extpfeil}   % <-- loads \xrightarrow / \xleftarrow if needed
 
-\begin{array}{c c c}
-% ── first row (left → right) ───────────────────────────────────────
+$$
+\require{amscd}      % loads the CD environment
+\begin{CD}
 \underbrace{
   \begin{array}{c}
     \text{Pre‑formation of rudimentary}\\
     \text{tables \& smaller trees}
   \end{array}
-}_{\text{Scaffolding}}
-&
-\xrightarrow{\quad}
-&
+}_{\text{Scaffolding}} @>>> 
 \begin{array}{c}
   \text{Formation of hierarchy/ mind‑map/}\\
   \text{pathway diagram(s)}
-\end{array}
-\\[1ex]
-% ── vertical arrow under the right‑hand box ───────────────────────────
-\phantom{X} & & \downarrow
-\\[1ex]
-% ── second row (right ← left) ───────────────────────────────────────
+\end{array} \\
+@VVV \\
 \begin{array}{c}
   \text{Decide whether to perform}\\
   \text{steady‑state simulation or}\\
   \text{transient simulation (animated)}
-\end{array}
-&
-\xleftarrow{\quad}
-&
+\end{array} @<<< 
 \underbrace{
   \begin{array}{c}
     \text{Formation of heatmap(s)/}\\
     \text{action‑consequence diagram(s)}
   \end{array}
 }_{\text{Supplement with energy‑hill diagram\\or mechanical analogy}}
-\end{array}
+\end{CD}
 $$
