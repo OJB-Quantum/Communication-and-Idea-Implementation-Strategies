@@ -132,7 +132,7 @@ Design & Simulation Workflow
 │
 ├─ Resource‑lean Strategy (systematic, tiny footprint)
 │   ├─ Start with CSVs, Markdown and a single plotting library
-│   ├─ Prefer Graphviz/ Mermaid over heavyweight CAD 
+│   ├─ Prefer Graphviz/ Mermaid/ ASCII trees over heavyweight CAD 
 │   ├─ Upgrade to CAD only when complexity forces it
 │   └─ (if heat‑map data are sparse) bootstrap with expert priors or a
 │       design‑of‑experiments → posterior surface instead of a raw grid
