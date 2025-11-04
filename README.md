@@ -65,31 +65,23 @@ Communication Strategy Tree - By Onri
 
 Idea Formation Pathways by Onri Jay Benally
 
+```mermaid
+flowchart LR
+    %% top row
+    A[Scaffolding<br>Pre‑formation of rudimentary<br>tables & smaller trees] 
+        -->| | B[Formation of hierarchy/ mind‑map/<br>pathway diagram(s)]
 
-$$
-\require{amscd}      % loads the CD environment
-\begin{CD}
-\underbrace{
-  \begin{array}{c}
-    \text{Pre‑formation of rudimentary}\\
-    \text{tables \& smaller trees}
-  \end{array}
-}_{\text{Scaffolding}} @>>> 
-\begin{array}{c}
-  \text{Formation of hierarchy/ mind‑map/}\\
-  \text{pathway diagram(s)}
-\end{array} \\
-@VVV \\
-\begin{array}{c}
-  \text{Decide whether to perform}\\
-  \text{steady‑state simulation or}\\
-  \text{transient simulation (animated)}
-\end{array} @<<< 
-\underbrace{
-  \begin{array}{c}
-    \text{Formation of heatmap(s)/}\\
-    \text{action‑consequence diagram(s)}
-  \end{array}
-}_{\text{Supplement with energy‑hill diagram\\or mechanical analogy}}
-\end{CD}
-$$
+    %% vertical drop from B
+    B -->| | C[Decide whether to perform<br>steady‑state simulation or<br>transient simulation (animated)]
+
+    %% bottom row, left‑ward arrow
+    D[Formation of heatmap(s)/<br>action‑consequence diagram(s)] 
+        -->| | C
+    D:::supplement
+    classDef supplement fill:#f9f,stroke:#333,stroke-width:1px;
+    class D supplement;
+    style A fill:#e8f5e9,stroke:#2e7d32;
+    style B fill:#e3f2fd,stroke:#1565c0;
+    style C fill:#fff3e0,stroke:#ef6c00;
+    style D fill:#fce4ec,stroke:#c2185b;
+
