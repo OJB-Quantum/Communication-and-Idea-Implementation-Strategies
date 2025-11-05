@@ -295,7 +295,7 @@ Resource‑lean Hardware Engineering Strategy
 │       │   │   • and mirrored in a collaborative Google Doc SOP for quick lab‑member access
 │       │   └─ Revision history tracked in Git – each edit creates a new Wiki version
 │       ├─ AI‑assisted code & recipe generation
-│       │   ├─ Open‑source, memory‑efficient LLMs (IBM Granite 4, Granite 4‑Lite, etc.) run on local GPU/CPU
+│       │   ├─ Open‑source, memory‑efficient LLMs (IBM Granite 4, Granite 4 Micro, etc.) run on local GPU/CPU
 │       │   ├─ Used to draft Python spin‑coater scripts, exposure‑dose calculators,
 │       │   │   and to review safety‑check checklists
 │       │   └─ LLM outputs are gated through a PEP‑8/ MISRA‑C linting step before merge
