@@ -131,8 +131,20 @@ Resource‑lean Hardware Engineering Strategy
 ├─ Open‑source Design & Simulation Stack
 │   ├─ Geometry definition & parametric CAD → GDSTK (Python API)
 │   ├─ 3‑D modelling & mesh generation → Blender + Blender‑Python scripts
+│   ├─ Curve‑fitting & Approximation Techniques
+│   │   ├─ Polynomial & least‑squares fitting (NumPy polyfit, SciPy curve_fit)
+│   │   ├─ Rational/ Padé approximants (SciPy, custom Python utilities)
+│   │   ├─ Spline & B‑spline/ NURBS fitting (SciPy interpolate, NURBS‑Python)
+│   │   ├─ Robust/ RANSAC regression (scikit‑learn) for outlier‑tolerant fits
+│   │   ├─ Regularized & Bayesian fitting (PyMC, TensorFlow Probability) for
+│   │   │   uncertainty‑aware models
+│   │   ├─ Machine‑learning surrogates (Gaussian Processes, lightweight neural nets)
+│   │   └─ Hybrid tetrational‑Bezier approximation
+│   │       • Combines iterated tetration with classic Bezier control points
+│   │       • Generates high‑order, smooth profiles with very few
+│   │         control points → low memory & compute cost
 │   ├─ Electromagnetic solver → openEMS (FDTD) consumes GDSTK geometry
-│   ├─ Field visualization → ParaView (remote/Colab‑linked)
+│   ├─ Field visualisation → ParaView (remote/Colab‑linked)
 │   ├─ Cloud compute & notebooks → Google Colab (run GDSTK, openEMS, post‑process)
 │   ├─ Collaborative version control → GitHub (repo, Issues, CI with GitHub Actions)
 │   ├─ Optional electronics layout → KiCad (open‑source PCB) & FreeCAD (mechanical)
@@ -155,7 +167,7 @@ Resource‑lean Hardware Engineering Strategy
 │   └─ Advanced low‑cost HPC simulation – AWS Palace
 │       ├─ Spot‑instance EC2 fleet + AWS ParallelCluster for massive FDTD / Meep sweeps
 │       ├─ Pre‑baked AMIs that contain openEMS, Meep, GDSTK, Python env. → one‑click launch
-│       ├─ Job orchestration via AWS Batch / Step Functions; auto‑scale to demand
+│       ├─ Job orchestration via AWS Batch/ Step Functions; auto‑scale to demand
 │       ├─ Input/Output stored on S3 (versioned, cheap, lifecycle‑controlled)
 │       ├─ Interactive notebook front‑end on Amazon SageMaker Studio (or Studio Lab)
 │       │   → launch ParaView remote‑rendering sessions directly from the notebook
@@ -173,8 +185,8 @@ Resource‑lean Hardware Engineering Strategy
 │   │   │   `oommf::boxsi` or exported to VTK for ParaView.
 │   │   └─ Fidimag – Python‑based micromagnetic framework built on FEniCS; useful for
 │   │       research‑grade custom energy terms and easy integration with
-│   │       SciPy optimization loops.
-│   ├─ Optics / Photonics (continuum & wave)
+│   │       SciPy optimisation loops.
+│   ├─ Optics/ Photonics (continuum & wave)
 │   │   ├─ MEEP (MIT‑licensed FDTD) – already packed in the Colab‑friendly image;
 │   │   │   supports sub‑pixel smoothing, dispersive media, and near‑field scans.
 │   │   ├─ pyMieScatt – analytical Mie‑scattering calculations for nanoparticles.
@@ -187,10 +199,10 @@ Resource‑lean Hardware Engineering Strategy
 │   │   └─ gprMax – open‑source electromagnetic wave propagation (including RF/MW);
 │   │       runs on CPU/GPU and can be scripted from Python notebooks.
 │   ├─ RF/ Microwave Circuit & Antenna
-│   │   ├─ openEMS (already in the stack) – extend with circuit‑extraction (S‑parameter)
+│   │   ├─ openEMS (already in the stack) - extend with circuit‑extraction (S‑parameter)
 │   │   │   post‑processing scripts written in Python.
 │   │   ├─ Qucs‑S – circuit simulation (SPICE‑like) for RF; command‑line usage from Colab.
-│   │   └─ PyAEDT (open‑source wrapper) – can drive an offline install of ANSYS
+│   │   └─ PyAEDT (open‑source wrapper) - can drive an offline install of ANSYS
 │   │       Electronics Desktop when a licensed installation is available;
 │   │       otherwise fall‑back to openEMS.
 │   ├─ Mechanical & Multi‑physics (continuum)
@@ -214,7 +226,7 @@ Resource‑lean Hardware Engineering Strategy
 │   │   ├─ SIESTA – localized‑basis DFT, lighter memory footprint for large cells.
 │   │   └─ DFTB+ – density‑functional tight‑binding; fast for preliminary band‑structure
 │   │       calculations in a resource‑lean context.
-│   ├─ Hybrid / Multi‑scale Frameworks
+│   ├─ Hybrid/ Multi‑scale Frameworks
 │   │   ├─ Multiscale Modeling Toolbox (MMTB) – Python orchestrator that couples
 │   │   │   continuum FEM (Calculix/Elmer) ↔ MD (LAMMPS) ↔ DFT (Quantum ESPRESSO).
 │   │   ├─ PyMD‑Hybrid – template scripts for handing off boundary regions
@@ -237,7 +249,7 @@ Resource‑lean Hardware Engineering Strategy
 │
 ├─ Resource‑lean Fabrication Materials & Processes
 │   ├─ Cardboard, corrugated paper, double‑sided tape (cheap, biodegradable)
-│   ├─ Water‑based adhesives / water‑less dry‑fit joints
+│   ├─ Water‑based adhesives/ water‑less dry‑fit joints
 │   ├─ Low‑cost sheet plastics (PET, acetate) for moisture barriers
 │   ├─ Hobby‑grade 3‑D printing (PLA/ABS) for functional hinges & enclosures
 │   ├─ Laser‑cutting from open‑source SVG/DXF (Inkscape) → inexpensive batch cuts
@@ -263,18 +275,18 @@ Resource‑lean Hardware Engineering Strategy
 │   │       └─ Enables “click‑and‑release’’ assembly of fluidic/electronic modules without permanent fasteners
 │   └─ Nanofabrication & Green Lithography
 │       ├─ Water‑based photoresists (AZ P4620, S1800, “green’’ SU‑8 variants)
-│       ├─ Egg‑white albumen lithography resist (fully biodegradable & <$0.02 / cm²)
+│       ├─ Egg‑white albumen lithography resist (fully biodegradable & <$0.02/ cm²)
 │       │   ├─ Mix fresh egg white (≈30 % protein) with a pinch of glycerol (improved adhesion)
 │       │   ├─ Spin‑coat 5–10 µm film; soft‑bake at 80 °C for 2 min
 │       │   ├─ UV expose (365 nm) – dose 50–100 mJ cm⁻² (adjustable via IBM Granite 4‑generated scripts)
-│       │   ├─ Develop in warm de‑ionised water (≈30 °C) – 30 s rinse, no toxic chemicals
+│       │   ├─ Develop in warm de‑ionized water (≈30 °C) – 30 s rinse, no toxic chemicals
 │       │   └─ Optional post‑exposure bake at 100 °C for 1 min to increase contrast
 │       ├─ TMAH‑free developers – sodium carbonate, NaOH, citric‑acid based
 │       ├─ DIY spin‑coater – 3‑D‑printed spinner, Arduino‑driven motor, speed‑control firmware
 │       ├─ Low‑cost hot‑plate bake oven – repurposed soldering‑iron base with PID control
 │       ├─ Maskless exposure systems
 │       │   ├─ Open‑source DLP projector or laser‑diode scanner
-│       │   └─ Pattern‑generation software: OpenLAF / gLith / PyLitho (Python)
+│       │   └─ Pattern‑generation software: OpenLAF/ gLith/ PyLitho (Python)
 │       ├─ Open‑source GDSII layout tools → KLayout Python API, gdsfactory for photonic circuits
 │       ├─ Nano‑scale simulation → openEMS or Meep (FDTD) for plasmonic/ photonic structures
 │       ├─ Documentation & Knowledge Capture
@@ -286,9 +298,9 @@ Resource‑lean Hardware Engineering Strategy
 │       │   ├─ Open‑source, memory‑efficient LLMs (IBM Granite 4, Granite 4‑Lite, etc.) run on local GPU/CPU
 │       │   ├─ Used to draft Python spin‑coater scripts, exposure‑dose calculators,
 │       │   │   and to review safety‑check checklists
-│       │   └─ LLM outputs are gated through a PEP‑8 / MISRA‑C linting step before merge
+│       │   └─ LLM outputs are gated through a PEP‑8/ MISRA‑C linting step before merge
 │       ├─ Coding & Hardware Design Standards
-│       │   ├─ Python code → PEP‑8 + Black formatting; C/C++ firmware → MISRA‑C / C++ Core Guidelines
+│       │   ├─ Python code → PEP‑8 + Black formatting; C/C++ firmware → MISRA‑C/ C++ Core Guidelines
 │       │   ├─ PCB design → IPC‑2221 (generic) & IPC‑7351 (land‑pattern) compliance
 │       │   ├─ Symbol & schematic convention → IEC 60617 symbols, IEEE 315 naming
 │       │   └─ A “standards‑matrix’’ Wiki page lists required checks for every PR
@@ -314,9 +326,9 @@ Resource‑lean Hardware Engineering Strategy
 │   ├─ Water‑based operation: sealed compartments, passive heat‑pipes
 │   ├─ Water‑less alternatives: phase‑change pads, thermally conductive tapes
 │   ├─ Cardboard‑compatible layouts: foil‑coated paper for moisture barrier
-│   ├─ Low‑cost Structural Support – Tensegrity Engineering
+│   ├─ Low‑cost Structural Support - Tensegrity Engineering
 │   │   ├─ Principle: isolated compression rods + tensioned strings
-│   │   │   (e.g., carbon‑fiber or bamboo rods + fishing‑line / high‑modulus polymer cords)
+│   │   │   (e.g., carbon‑fiber or bamboo rods + fishing‑line/ high‑modulus polymer cords)
 │   │   ├─ Nodes 3‑D‑printed from PLA/ABS with integrated thumb‑screw or snap‑fit holes
 │   │   ├─ Parametric geometry generated in Blender; static analysis with Calculix,
 │   │   │   OpenSees, or Elmer FEM
@@ -339,22 +351,34 @@ Resource‑lean Hardware Engineering Strategy
 │   │   │   • Use flexure hinges to hold micro‑fluidic chips, reducing stress on fragile bonds
 │   │   │   • Provide compliant isolation for sensitive electronics (e.g., accelerometers)
 │   │   └─ Materials – PET, thin FR‑4, flexible TPU, silicone rubber, laminated cardboard‑paper
-│   │       composites; all <$0.10 / cm² and compatible with laser‑cut or 3‑D‑print processes
+│   │       composites; all <$0.10/ cm² and compatible with laser‑cut or 3‑D‑print processes
+│   ├─ Spot Fresnel lens sunlight capture – low‑cost extreme‑heat collector
+│   │   ├─ Generate Fresnel‑zone patterns with the hybrid tetrational‑Bezier technique
+│   │   ├─ Print/laser‑cut zones onto thin PET or acrylic sheets (≤ 1 mm) using inexpensive
+│   │   │   desktop plotters or DIY DLP exposure.
+│   │   ├─ Assemble a lightweight frame (tensgrity or compliant‑mechanism‑based)
+│   │   │   to hold the lens at the optimal focal distance.
+│   │   ├─ Integrate passive heat‑pipes or high‑thermal‑conductivity tapes behind the
+│   │   │   focal spot to channel concentrated solar energy into a thermal store
+│   │   │   (water‑less phase‑change pads or low‑cost metal‑plate absorbers).
+│   │   └─ Uses only cardboard, PET, minimal adhesive (nano‑tape) – keeping cost < $5/ collector.
 │   └─ If folding not feasible → rigid‑fold linkages or segmented enclosures
 │
 └─ Community & DIY Ecosystem (Low Barrier to Entry)
-    ├─ Open‑source hardware platforms – Arduino, ESP32, Raspberry Pi Pico
+    ├─ Open‑source hardware platforms - Arduino, ESP32, Raspberry Pi Pico
     ├─ Tutorials & notebooks hosted on GitHub Pages, Google Colab, Jupyter Book
     ├─ Starter‑kit BOM: cardboard sheets, tape, low‑cost microcontroller, breadboard,
     │   3‑D‑printer filament, basic hand tools
     ├─ Collaborative documentation
     │   ├─ Project Wiki (Markdown) for design rationales, standards matrix, resistance recipes
-    │   └─ Google Docs shared SOPs for safety, spin‑coating, bake‑out procedures (real‑time editing)
+    │   ├─ Google Docs shared SOPs for safety, spin‑coating, bake‑out procedures (real‑time editing)
+    │   ├─ Google Sheets for experiment logs, component inventories, and cost tracking
+    │   └─ Google Slides for quick design briefs, stakeholder presentations, and tutorial decks
     ├─ AI‑enhanced development workflow
     │   ├─ IBM Granite 4 (and open‑source variants) run locally to suggest code snippets,
     │   │   debug scripts, and auto‑generate GDSII layout macros
     │   └─ All generated code passes through automated linters that enforce PEP‑8/ MISRA‑C
     │       and are reviewed against IPC/ IEC hardware standards before merge
     ├─ Contribution workflow: issue templates, pull‑request reviews, CI testing
-    └─ License under MIT / CERN‑OHL to encourage remixing and community‑driven extensions
+    └─ License under MIT/ CERN‑OHL to encourage remixing and community‑driven extensions
 ```
