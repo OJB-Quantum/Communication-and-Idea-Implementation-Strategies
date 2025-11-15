@@ -57,7 +57,8 @@ Communication Strategy Tree - by Onri
 │  ├─ Notably – signals noteworthy element
 │  ├─ Interestingly – highlights engaging detail
 │  ├─ Of interest – flags relevant point
-│  └─ For context – situational background primer; activates shared background and constraints, organizes given→new delivery, and aligns with conversational relevance
+│  ├─ For context – situational background primer; activates shared background and constraints, organizes given→new delivery, and aligns with conversational relevance
+│  └─ For reference – anchor or lookup pointer; supplies baseline value, canonical source, exemplar, or specification for comparison without advancing a claim
 │
 └─ Norms & Baselines
    └─ Conventionally – by established practice or standard usage
