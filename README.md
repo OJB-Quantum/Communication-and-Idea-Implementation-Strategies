@@ -36,6 +36,7 @@ Communication Strategy Tree - by Onri
 ├─ Methodological Lens
 │  ├─ Critically – careful, evidence-weighing evaluation of assumptions, sources, causal claims, and alternatives
 │  ├─ Analytically – evidence-weighted derivation (systematic)
+│  ├─ Coherently – internally consistent, globally structured, logically connected delivery
 │  ├─ Systematically – step-wise, protocol-driven approach
 │  ├─ Strategically – purpose-aligned planning
 │  ├─ At the implementation level – code-/hardware-layer perspective
@@ -51,6 +52,7 @@ Communication Strategy Tree - by Onri
 │  └─ Currently deployed – empirically instantiated case
 │
 ├─ Temporal & Agency Orientation
+│  ├─ Chronologically – earliest→latest sequencing, order-preserving narration
 │  └─ Proactively – forward-acting, anticipatory intervention
 │
 ├─ Attention & Salience
