@@ -56,7 +56,8 @@ Communication Strategy Tree - by Onri
 ├─ Attention & Salience
 │  ├─ Notably – signals noteworthy element
 │  ├─ Interestingly – highlights engaging detail
-│  └─ Of interest – flags relevant point
+│  ├─ Of interest – flags relevant point
+│  └─ For context – situational background primer; activates shared background and constraints, organizes given→new delivery, and aligns with conversational relevance
 │
 └─ Norms & Baselines
    └─ Conventionally – by established practice or standard usage
