@@ -19,7 +19,8 @@ Communication Strategy Tree - by Onri
 │  ├─ Arguably – defensible, yet contestable, speaker-oriented epistemic stance (hedged assertion)
 │  ├─ Relatively – context-bound qualification
 │  ├─ Reasonably – logically justified, moderately confident
-│  └─ Plausibly – appears possible or credible given current knowledge
+│  ├─ Plausibly – appears possible or credible given current knowledge
+│  └─ Reliably – with consistent, repeatable outcomes under similar conditions
 │
 ├─ Extent/ Completeness
 │  ├─ Virtually – almost wholly (≈ 99 %)
