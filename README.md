@@ -41,7 +41,8 @@ Communication Strategy Tree - by Onri
 │  ├─ Systematically – step-wise, protocol-driven approach
 │  ├─ Strategically – purpose-aligned planning
 │  ├─ At the implementation level – code-/hardware-layer perspective
-│  └─ Organically – emerging naturally from context without forced structure
+│  ├─ Organically – emerging naturally from context without forced structure
+│  └─ In other words – explicit rephrasing signal that restates the same idea with different wording, often simpler or more concrete, to tighten understanding and highlight equivalence
 │
 ├─ Conditionality & Contingency
 │  ├─ Conditionally – valid only under stated premise(s)
@@ -54,6 +55,7 @@ Communication Strategy Tree - by Onri
 │
 ├─ Temporal & Agency Orientation
 │  ├─ Chronologically – earliest → latest sequencing, order-preserving narration
+│  ├─ From here – forward-linking waypoint marking that subsequent steps, implications, or actions proceed from the current result or discussion state
 │  └─ Proactively – forward-acting, anticipatory intervention
 │
 ├─ Attention & Salience
