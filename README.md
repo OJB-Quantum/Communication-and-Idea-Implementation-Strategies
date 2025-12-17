@@ -261,6 +261,53 @@ Resource-lean Hardware Engineering Strategy
 │   ├─ Low-cost sheet plastics (PET, acetate) for moisture barriers
 │   ├─ Hobby-grade 3-D printing (PLA/ABS) for functional hinges & enclosures
 │   ├─ Laser-cutting from open-source SVG/DXF (Inkscape) → inexpensive batch cuts
+│   ├─ Low-cost LASER-cut sheet metal & sheet-stock (2.5-D → folded-3-D substitute for expensive CNC-machined parts)
+│   │   ├─ Why it replaces many CNC (computer numerical control) 3-D parts
+│   │   │   ├─ Re-parameterize “bulk” 3-D into “developable” 2-D profiles + bends + fasteners (sheet-metal origami/ kirigami)
+│   │   │   ├─ Use folds, hems, beads, and flanges to raise stiffness via section-modulus leverage (geometry beats mass)
+│   │   │   ├─ Replace pockets/fillets with bend radii + relief cuts; keep load paths in-plane, then “lift” with bends
+│   │   │   └─ Build self-aligning assemblies: tab-and-slot, captive features, and bend-up datums (jigless registration)
+│   │   ├─ Sheet metals commonly LASER-cut (low-cost when thickness stays in standard shop windows)
+│   │   │   ├─ Mild steel/ low-carbon steel (≈0.5–6 mm typical) – cheapest structural sheet for brackets and frames
+│   │   │   ├─ Stainless steel (≈0.3–6 mm) – corrosion resistance; strong thin panels; clean edges with good settings
+│   │   │   ├─ Aluminum (≈0.5–6 mm; fiber LASER preferred) – lightweight + thermal spreaders; watch dross and reflectivity
+│   │   │   ├─ Spring steel (≈0.1–1 mm) – clips, compliant springs, EMI (electromagnetic interference) fingers
+│   │   │   ├─ Brass/bronze (thin) – aesthetic panels, low-spark hardware, RF shielding
+│   │   │   └─ Copper (thin; reflective + very conductive) – bus bars and shields; fiber LASER, or waterjet if reflectivity dominates
+│   │   ├─ Non-metal sheet materials eligible for LASER cutting (often cheaper and faster than machining)
+│   │   │   ├─ Acrylic (polymethyl methacrylate, PMMA) – clean CO₂-LASER edges; optical windows; light pipes; covers
+│   │   │   ├─ PET/ PETG (polyethylene terephthalate/ glycol-modified) – guards, flexures; thin compliant frames
+│   │   │   ├─ Polyimide (Kapton) film – insulation gaskets, flexible-circuit substrates, thermal/electrical barriers (thin)
+│   │   │   ├─ FR-4 (flame-retardant glass-epoxy laminate) – adapter plates and stiffeners; needs fume control + conservative settings
+│   │   │   ├─ Plywood/MDF/bamboo veneer – enclosures and jigs; seal edges for moisture stability
+│   │   │   └─ Cardboard/paper – iteration-speed king; fold patterns; immediately compatible with your origami modules above
+│   │   ├─ Materials to avoid on a typical shop LASER (and what to do instead so the design still “works”)
+│   │   │   ├─ PVC (polyvinyl chloride) – corrosive chlorine chemistry; do not LASER-cut → switch to PET/PETG/acrylic, or waterjet
+│   │   │   ├─ Acetal (polyoxymethylene, POM/Delrin) – formaldehyde fumes → route/CNC mill, or substitute PETG/nylon sheet
+│   │   │   ├─ Carbon-fiber/epoxy sheet – hazardous dust/fumes → waterjet + sealed edge finishing, or swap to G-10/FR-4 where suitable
+│   │   │   └─ Thick polycarbonate – tends to char/yellow → CNC route/waterjet, or “change identity” to acrylic if optical clarity is needed
+│   │   ├─ Design-for-Manufacturability (DFM) rules that keep LASER-cut parts genuinely “low cost”
+│   │   │   ├─ Kerf compensation: offset geometry by kerf width; always include a kerf coupon (same material, same thickness) per order
+│   │   │   ├─ Bend reliefs: prevent corner tearing; add dogbones/slots at bend terminations; avoid trapped radii
+│   │   │   ├─ Bend allowance math: K-factor tables; keep inside bend radius ≥ material thickness when possible for repeatability
+│   │   │   ├─ Feature sizing: avoid holes < 1× thickness; avoid hole-to-edge < 1× thickness; avoid ultra-thin webs
+│   │   │   ├─ Cost drivers: pierce count, micro-features, and tight tolerances → consolidate holes, use shared cut-lines, and relax where safe
+│   │   │   └─ Heat-affected zone (HAZ): keep critical springs away from cut edges; specify deburr/tumble, and plan for edge rounding
+│   │   ├─ Assembly patterns that “recreate 3-D” cheaply (and stay serviceable)
+│   │   │   ├─ Tabs + slots + bend-up flanges → self-fixturing chassis (no custom fixtures needed)
+│   │   │   ├─ Rivets, threaded inserts, and self-clinching fasteners → repeatable joints + reworkability
+│   │   │   ├─ Spot weld/ braze/ solder (thin metals) when fasteners are too bulky or when conductivity is required
+│   │   │   ├─ Captive nuts + access windows → tool-friendly field service and fast teardown
+│   │   │   └─ Hybrid builds: LASER-cut “skeleton plates” + 3-D-printed nodes (directly compatible with your tensegrity node concept)
+│   │   ├─ Where sheet LASER cutting is a performance-per-dollar win over CNC
+│   │   │   ├─ Enclosures, brackets, sensor mounts, battery trays, panelized fixtures, and alignment combs
+│   │   │   ├─ Thermal spreaders/heat shields: aluminum/copper plates with vent patterns and fold-up stand-offs
+│   │   │   ├─ EMI shields: folded cans, spring fingers, ground tabs (spring steel or stainless)
+│   │   │   └─ Fluidics/optics: baffles, apertures, slit masks, and modular frames for tape-based or PET-based microfluidics
+│   │   └─ File/format pipeline (stays consistent with the rest of your stack)
+│   │       ├─ Parametric patterns in Blender/GDSTK → DXF/SVG export (same “single source of truth” geometry idea)
+│   │       ├─ Encode bend lines as etches + include part IDs; add kerf + bend coupons on every sheet
+│   │       └─ Version-control cut files + bend notes + assembly drawings in GitHub alongside simulation + firmware
 │   ├─ Modular origami-inspired foldable patterns designed in Blender
 │   ├─ Tape-based Engineering Solutions
 │   │   ├─ Tape-based microfluidics
