@@ -257,6 +257,7 @@ Resource-lean Hardware Engineering Strategy
 │
 ├─ Resource-lean Fabrication Materials & Processes
 │   ├─ Cardboard, corrugated paper, double-sided tape (cheap, biodegradable)
+│   ├─ Modular origami-inspired foldable patterns designed in Blender
 │   ├─ Water-based adhesives/ water-less dry-fit joints
 │   ├─ Low-cost sheet plastics (PET, acetate) for moisture barriers
 │   ├─ Hobby-grade 3-D printing (PLA/ABS) for functional hinges & enclosures
@@ -308,7 +309,52 @@ Resource-lean Hardware Engineering Strategy
 │   │       ├─ Parametric patterns in Blender/GDSTK → DXF/SVG export (same “single source of truth” geometry idea)
 │   │       ├─ Encode bend lines as etches + include part IDs; add kerf + bend coupons on every sheet
 │   │       └─ Version-control cut files + bend notes + assembly drawings in GitHub alongside simulation + firmware
-│   ├─ Modular origami-inspired foldable patterns designed in Blender
+│   ├─ DIY metal-rod-based electrical discharge machining (EDM) using re-purposed 3-D printer motion parts (low-cost “spark erosion” for hard-to-machine metals)
+│   │   ├─ High-school intuition (what it is, in plain terms)
+│   │   │   ├─ A metal rod (the electrode) approaches the metal part, without quite touching it
+│   │   │   ├─ Short electrical sparks jump the tiny gap through a liquid (the dielectric), and each spark removes a microscopic crater
+│   │   │   ├─ The liquid cools the spot and flushes debris; the machine “feeds” the rod to keep sparking stable rather than shorting
+│   │   │   └─ Net effect: you “burn” a hole/slot/cavity into conductive material, especially when cutters would chatter or dull
+│   │   ├─ Graduate-level view (physics + control, still resource-lean)
+│   │   │   ├─ Material removal is pulsed thermo-plasma erosion: per-pulse energy Eₚ ≈ ∫ V(t)·I(t) dt drives melt/vapor + ejection
+│   │   │   ├─ Closed-loop gap control (servo): regulate spark-gap via measured gap voltage/current, preventing sustained arcs and hard shorts
+│   │   │   ├─ Stability levers: duty cycle (on/off time), current limit, flushing pressure, debris conductivity, and electrode wear dynamics
+│   │   │   └─ Surface integrity lever: trade removal rate vs “white layer”/recast and microcracking via lower pulse energy + better flushing
+│   │   ├─ Why “metal-rod-based” EDM is a sweet spot for DIY
+│   │   │   ├─ 1-axis plunge/sinker EDM: simplest motion stack (just Z) → holes, pockets, internal corners, broken-tap removal
+│   │   │   ├─ Rod or tube electrode options: solid rod for stiffness; hollow tube for flushing and faster deep holes
+│   │   │   └─ Electrode materials (choose by wear + machinability): copper, graphite, brass, tungsten, or composite stacks
+│   │   ├─ 3-D printer parts you can re-use (cost control through re-parameterization)
+│   │   │   ├─ Z-axis mechanics: stepper motor + lead screw + linear rails + anti-backlash nut → precise micro-feed toward the work
+│   │   │   ├─ Control electronics: spare 3-D printer mainboard or GRBL-style controller for deterministic motion and limit switches
+│   │   │   ├─ Structure: printer gantry/frame becomes the EDM head carriage (add splash shielding rather than rebuilding a mill frame)
+│   │   │   └─ Optional spindle: slow rotation of the rod/tube electrode to stabilize debris evacuation and reduce taper in deep holes
+│   │   ├─ Dielectric + flushing (cheap choices, but do not skip process hygiene)
+│   │   │   ├─ Dielectric fluid: deionized water (clean + cheap) or EDM oil (often better finish, but higher fire/ventilation burden)
+│   │   │   ├─ Flushing loop: small pump + nozzle + settling/filter stage; recirculate, because debris conductivity destabilizes sparks
+│   │   │   └─ Waste handling: treat slurry as metal-contaminated waste; settle solids and avoid pouring fines into drains
+│   │   ├─ When EDM beats “resource-lean CNC” in practice
+│   │   │   ├─ Hardened steels, carbides (where applicable), and other difficult-to-cut alloys (reduce tool-cost burn rate)
+│   │   │   ├─ Deep, small holes; narrow slots; sharp internal corners; removing broken taps/drills without destroying the parent part
+│   │   │   └─ Features on already-heat-treated parts where you want to avoid rework cycles and expensive cutters
+│   │   ├─ What it cannot do (and how to make it true by changing the material/system identity)
+│   │   │   ├─ Non-conductors: EDM needs electrical conductivity
+│   │   │   │   ├─ Make it “EDM-eligible” by adding a sacrificial conductive coating/foil, or by embedding a conductive starter insert
+│   │   │   │   └─ If coating changes the part’s function/identity (e.g., dielectric surface), treat it as a temporary process layer and remove it
+│   │   │   └─ Large bulk removal: EDM is not a bulk hogging process → rough with LASER-cut sheet/fab, then EDM only the hard features
+│   │   ├─ Safety & compliance (do not treat this as benign hobby electronics)
+│   │   │   ├─ Electrical: high-energy pulsed power, conductive fluids, and wet environments → isolation, fusing, and grounded enclosures
+│   │   │   ├─ Fire/air: oil mist, vapor, and hot particles → ventilation, splash control, and conservative duty cycles
+│   │   │   ├─ EMI (electromagnetic interference): pulsed currents radiate → twisted pairs, short leads, shielding, and clean grounding topology
+│   │   │   └─ Documentation: record dielectric, pulse settings, and observed stability so the process is reproducible and reviewable
+│   │   ├─ Open-source anchor points (start from a community baseline instead of reinventing everything)
+│   │   │   ├─ OpenEDM ecosystem – community-driven compact EDM machine efforts (wire and plunge directions)
+│   │   │   ├─ Open-source EDM pulse generator / power-supply modules (use as a reference architecture, even if you redesign)
+│   │   │   └─ Maker precedent: “3-D printer as EDM” proof-of-concept builds; useful for validating the concept before refining the process
+│   │   └─ File/format pipeline (stay consistent with your repo-first strategy)
+│   │       ├─ Geometry: define electrode profile and target cavity in CAD; export 2-D/3-D references into the same GitHub repo
+│   │       ├─ Motion: treat EDM as a constrained toolpath problem (often 1-axis), log Z vs time + spark telemetry for debugging
+│   │       └─ Process notebooks: store “settings recipes” (dielectric conductivity, pulse parameters, feed gains) as versioned YAML/JSON
 │   ├─ Tape-based Engineering Solutions
 │   │   ├─ Tape-based microfluidics
 │   │   │   ├─ Define channels by stacking/laminating double-sided adhesive tape
