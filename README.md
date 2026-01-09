@@ -1,4 +1,4 @@
-# Communication-Strategies
+# Communication-and-Idea-Implementation-Strategies
 An organized compilation of ideas for oneself to communicate strategically and implement practical ideas. Formed and written by Onri Jay Benally.
 
 This tree of terminologies have been helpful to me over the years in the English-speaking world, and it also contains some of the best adverbs I have found to be effective in speech and literature. Enjoy.
