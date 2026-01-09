@@ -100,26 +100,83 @@ Idea Formation Pathways - by Onri
 
 ```
 Scaffolding
-│   – Pre‑formation of rudimentary tables & smaller trees
+│   – Pre-formation of rudimentary tables & smaller trees
+│   – Define meta-constraints & “success metrics” 
+│   │   ├─ Hardware-agnostic framing (portability across platforms, interfaces, and toolchains)
+│   │   ├─ Resource-lean framing (compute/time/tooling/budget minimized by default)
+│   │   ├─ Low-maintenance or maintenance-free targets (drift tolerance, minimal recalibration)
+│   │   └─ Agnostic/ plug-and-play design targets (minimal integration friction, standardized I/O)
+│   – Normalization pass (so that comparisons are meaningful, not merely numerical)
+│   │   ├─ Units + dimensional consistency (SI coherence, temperature/pressure conventions)
+│   │   ├─ Coordinate frames + reference baselines (what “zero” and “nominal” mean)
+│   │   └─ Dataset normalization (for comparability across sources)
+│   │       ├─ z-score standardization
+│   │       ├─ min-max scaling
+│   │       └─ log/ power transforms (when distributions are heavy-tailed)
+│   – Best materials availability search (feasibility anchored to what can actually be procured)
+│   │   ├─ Vendor + lead-time scan (forms, thicknesses, purities, MOQ, geographic sourcing)
+│   │   ├─ Datasheet/property scan (thermal budget, conductivity, loss tangent, corrosion)
+│   │   └─ Process/tool access scan (etches, deposition options, metrology availability)
+│   – Interface + stack realism (when buildability matters, not just conceptual correctness)
+│       ├─ Identification of adhesion layers (what makes layer A actually stick to layer B)
+│       ├─ Identification of diffusion barriers (what prevents intermixing over time/temperature)
+│       └─ Identification of other necessary barriers
+│           ├─ oxidation barriers/ passivation
+│           ├─ moisture barriers
+│           ├─ electromigration/ ion-migration blockers (as relevant)
+│           └─ thermal/ chemical compatibility constraints (as relevant)
 │
-├─ Formation of hierarchy/ mind‑map/ pathway diagram(s)
+├─ Formation of hierarchy/ mind-map/ pathway diagram(s)
+│   ├─ Normalize the vocabulary + variable names 
 │   └─ Decision: which simulation to run?
-│       ├─ Steady‑state simulation
-│       │   └─ (optional) feed results into scatter‑plot refinement
+│       ├─ Steady-state simulation
+│       │   ├─ Resource-lean model selection (lowest-fidelity model that still answers the question)
+│       │   ├─ Normalization embedded in inputs/outputs (units, scaling, boundary conventions)
+│       │   ├─ Interpolation (within-domain gap-filling for sweeps, response surfaces, lookups)
+│       │   └─ (optional) feed results into scatter-plot refinement
 │       └─ Transient simulation (animated)
-│           └─ (optional) feed results into scatter‑plot refinement
+│           ├─ Normalization of time discretization (sampling, timestep stability conventions)
+│           ├─ Interpolation (temporal/spatial resampling for analysis and visualization)
+│           └─ (optional) feed results into scatter-plot refinement
 │
-├─ Formation of heatmap(s)/ action‑consequence diagram(s)
-│   └─ (Supplement with a gravity‑hill diagram or a mechanical analogy)
+├─ Formation of heatmap(s)/ action-consequence diagram(s)
+│   └─ (Supplement with a gravity-hill diagram or a mechanical analogy)
+│       ├─ Normalize axes, thresholds, and colormaps (so plots compare across runs/sources)
+│       ├─ Interpolation to grid sparse samples (explicitly label uncertainty/ sparsity)
 │       └─ Decision: which simulation to run if applicable?
-│           ├─ Steady‑state simulation
-│           │   └─ (optional) feed results into scatter‑plot refinement
+│           ├─ Steady-state simulation
+│           │   ├─ Interpolation for contouring/heatmap construction (domain-bounded)
+│           │   └─ (optional) feed results into scatter-plot refinement
 │           └─ Transient simulation (animated)
-│               └─ (optional) feed results into scatter‑plot refinement
+│               ├─ Interpolation for smooth animation/ phase-portrait extraction
+│               └─ (optional) feed results into scatter-plot refinement
 │
-└─ Draft scatter‑plot (based on the initial tables)
-    └─ Refine scatter‑plot (incorporate data produced by any simulation or literature search)
-        └─ Comprehensive scatter‑plot (final result)
+└─ Draft scatter-plot (based on the initial tables)
+    ├─ Normalization/ standardization of plotted variables (so axes are interpretable)
+    ├─ Overlay feasibility constraints (so “best” does not mean “impossible”)
+    │   ├─ Hardware-agnostic constraints (interface envelopes, power/thermal limits, I/O limits)
+    │   ├─ Resource-lean constraints (runtime limits, measurement limits, tooling limits)
+    │   └─ Low-maintenance constraints (calibration frequency, drift budgets, failure modes)
+    └─ Refine scatter-plot (incorporate data produced by any simulation or literature/availability search)
+        ├─ Interpolation (in-domain completion; explicitly bounded by evidence)
+        ├─ Strategic extrapolation (out-of-domain hypotheses, but with guardrails)
+        │   ├─ Assumption-explicit forecasting (what must remain true for the extrapolation to hold)
+        │   ├─ Sensitivity analysis (which parameters dominate the extrapolated claim)
+        │   ├─ Uncertainty tagging (error bars, confidence regions, scenario bands)
+        │   └─ “Repair move” if extrapolation dominates:
+        │       ├─ expand the dataset (new measurements, new sources)
+        │       ├─ increase model fidelity (only where it changes the decision)
+        │       └─ narrow the claim (re-scope to the domain where evidence exists)
+        ├─ Materials + stack refinement loop (feasibility converges alongside performance)
+        │   ├─ Re-run best materials availability search (substitutions, alternates, constraints)
+        │   └─ Re-validate adhesion layers/ diffusion barriers/ other barriers vs process window
+        ├─ Plug-and-play readiness check (integration cost treated as a first-class metric)
+        │   ├─ Interface standardization (mechanical/electrical/software, as applicable)
+        │   ├─ Minimal-step bring-up + self-test hooks (where feasible)
+        │   └─ Documentation artifacts (checklists, parameter defaults, “known-good” configs)
+        └─ Comprehensive scatter-plot (final result)
+            ├─ Exportable decision artifacts (tables, heatmaps, constraints checklist, BOM notes)
+            └─ Shortlisted candidates (hardware-agnostic, resource-lean, low-maintenance, plug-and-play)
 ```
 
 ---
@@ -349,7 +406,7 @@ Resource-lean Hardware Engineering Strategy
 │   │   │   └─ Documentation: record dielectric, pulse settings, and observed stability so the process is reproducible and reviewable
 │   │   ├─ Open-source anchor points (start from a community baseline instead of reinventing everything)
 │   │   │   ├─ OpenEDM ecosystem – community-driven compact EDM machine efforts (wire and plunge directions)
-│   │   │   ├─ Open-source EDM pulse generator / power-supply modules (use as a reference architecture, even if you redesign)
+│   │   │   ├─ Open-source EDM pulse generator/ power-supply modules (use as a reference architecture, even if you redesign)
 │   │   │   └─ Maker precedent: “3-D printer as EDM” proof-of-concept builds; useful for validating the concept before refining the process
 │   │   └─ File/format pipeline (stay consistent with your repo-first strategy)
 │   │       ├─ Geometry: define electrode profile and target cavity in CAD; export 2-D/3-D references into the same GitHub repo
