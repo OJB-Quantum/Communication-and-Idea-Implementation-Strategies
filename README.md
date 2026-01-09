@@ -1,5 +1,5 @@
-# Communication-Strategies
-An organized compilation of ideas for oneself to communicate strategically and implement practical ideas. Formed and written by Onri Jay Benally in 2025.
+# Communication-and-Idea-Implementation-Strategies
+An organized compilation of ideas for oneself to communicate strategically and implement practical ideas. Formed and written by Onri Jay Benally.
 
 This tree of terminologies have been helpful to me over the years in the English-speaking world, and it also contains some of the best adverbs I have found to be effective in speech and literature. Enjoy.
 
@@ -19,7 +19,8 @@ Communication Strategy Tree - by Onri
 │  ├─ Arguably – defensible, yet contestable, speaker-oriented epistemic stance (hedged assertion)
 │  ├─ Relatively – context-bound qualification
 │  ├─ Reasonably – logically justified, moderately confident
-│  └─ Plausibly – appears possible or credible given current knowledge
+│  ├─ Plausibly – appears possible or credible given current knowledge
+│  └─ Reliably – with consistent, repeatable outcomes under similar conditions
 │
 ├─ Extent/ Completeness
 │  ├─ Virtually – almost wholly (≈ 99 %)
@@ -36,10 +37,12 @@ Communication Strategy Tree - by Onri
 ├─ Methodological Lens
 │  ├─ Critically – careful, evidence-weighing evaluation of assumptions, sources, causal claims, and alternatives
 │  ├─ Analytically – evidence-weighted derivation (systematic)
+│  ├─ Coherently – internally consistent, globally structured, logically connected delivery
 │  ├─ Systematically – step-wise, protocol-driven approach
 │  ├─ Strategically – purpose-aligned planning
 │  ├─ At the implementation level – code-/hardware-layer perspective
-│  └─ Organically – emerging naturally from context without forced structure
+│  ├─ Organically – emerging naturally from context without forced structure
+│  └─ In other words – explicit rephrasing signal that restates the same idea with different wording, often simpler or more concrete, to tighten understanding and highlight equivalence
 │
 ├─ Conditionality & Contingency
 │  ├─ Conditionally – valid only under stated premise(s)
@@ -51,12 +54,16 @@ Communication Strategy Tree - by Onri
 │  └─ Currently deployed – empirically instantiated case
 │
 ├─ Temporal & Agency Orientation
+│  ├─ Chronologically – earliest → latest sequencing, order-preserving narration
+│  ├─ From here – forward-linking waypoint marking that subsequent steps, implications, or actions proceed from the current result or discussion state
 │  └─ Proactively – forward-acting, anticipatory intervention
 │
 ├─ Attention & Salience
 │  ├─ Notably – signals noteworthy element
 │  ├─ Interestingly – highlights engaging detail
-│  └─ Of interest – flags relevant point
+│  ├─ Of interest – flags relevant point
+│  ├─ For context – situational background primer; activates shared background and constraints, organizes given→new delivery, and aligns with conversational relevance
+│  └─ For reference – anchor or lookup pointer; supplies baseline value, canonical source, exemplar, or specification for comparison without advancing a claim
 │
 └─ Norms & Baselines
    └─ Conventionally – by established practice or standard usage
@@ -93,26 +100,83 @@ Idea Formation Pathways - by Onri
 
 ```
 Scaffolding
-│   – Pre‑formation of rudimentary tables & smaller trees
+│   – Pre-formation of rudimentary tables & smaller trees
+│   – Define meta-constraints & “success metrics” 
+│   │   ├─ Hardware-agnostic framing (portability across platforms, interfaces, and toolchains)
+│   │   ├─ Resource-lean framing (compute/time/tooling/budget minimized by default)
+│   │   ├─ Low-maintenance or maintenance-free targets (drift tolerance, minimal recalibration)
+│   │   └─ Agnostic/ plug-and-play design targets (minimal integration friction, standardized I/O)
+│   – Normalization pass (so that comparisons are meaningful, not merely numerical)
+│   │   ├─ Units + dimensional consistency (SI coherence, temperature/pressure conventions)
+│   │   ├─ Coordinate frames + reference baselines (what “zero” and “nominal” mean)
+│   │   └─ Dataset normalization (for comparability across sources)
+│   │       ├─ z-score standardization
+│   │       ├─ min-max scaling
+│   │       └─ log/ power transforms (when distributions are heavy-tailed)
+│   – Best materials availability search (feasibility anchored to what can actually be procured)
+│   │   ├─ Vendor + lead-time scan (forms, thicknesses, purities, MOQ, geographic sourcing)
+│   │   ├─ Datasheet/property scan (thermal budget, conductivity, loss tangent, corrosion)
+│   │   └─ Process/tool access scan (etches, deposition options, metrology availability)
+│   – Interface + stack realism (when buildability matters, not just conceptual correctness)
+│       ├─ Identification of adhesion layers (what makes layer A actually stick to layer B)
+│       ├─ Identification of diffusion barriers (what prevents intermixing over time/temperature)
+│       └─ Identification of other necessary barriers
+│           ├─ oxidation barriers/ passivation
+│           ├─ moisture barriers
+│           ├─ electromigration/ ion-migration blockers (as relevant)
+│           └─ thermal/ chemical compatibility constraints (as relevant)
 │
-├─ Formation of hierarchy/ mind‑map/ pathway diagram(s)
+├─ Formation of hierarchy/ mind-map/ pathway diagram(s)
+│   ├─ Normalize the vocabulary + variable names 
 │   └─ Decision: which simulation to run?
-│       ├─ Steady‑state simulation
-│       │   └─ (optional) feed results into scatter‑plot refinement
+│       ├─ Steady-state simulation
+│       │   ├─ Resource-lean model selection (lowest-fidelity model that still answers the question)
+│       │   ├─ Normalization embedded in inputs/outputs (units, scaling, boundary conventions)
+│       │   ├─ Interpolation (within-domain gap-filling for sweeps, response surfaces, lookups)
+│       │   └─ (optional) feed results into scatter-plot refinement
 │       └─ Transient simulation (animated)
-│           └─ (optional) feed results into scatter‑plot refinement
+│           ├─ Normalization of time discretization (sampling, timestep stability conventions)
+│           ├─ Interpolation (temporal/spatial resampling for analysis and visualization)
+│           └─ (optional) feed results into scatter-plot refinement
 │
-├─ Formation of heatmap(s)/ action‑consequence diagram(s)
-│   └─ (Supplement with a gravity‑hill diagram or a mechanical analogy)
+├─ Formation of heatmap(s)/ action-consequence diagram(s)
+│   └─ (Supplement with a gravity-hill diagram or a mechanical analogy)
+│       ├─ Normalize axes, thresholds, and colormaps (so plots compare across runs/sources)
+│       ├─ Interpolation to grid sparse samples (explicitly label uncertainty/ sparsity)
 │       └─ Decision: which simulation to run if applicable?
-│           ├─ Steady‑state simulation
-│           │   └─ (optional) feed results into scatter‑plot refinement
+│           ├─ Steady-state simulation
+│           │   ├─ Interpolation for contouring/heatmap construction (domain-bounded)
+│           │   └─ (optional) feed results into scatter-plot refinement
 │           └─ Transient simulation (animated)
-│               └─ (optional) feed results into scatter‑plot refinement
+│               ├─ Interpolation for smooth animation/ phase-portrait extraction
+│               └─ (optional) feed results into scatter-plot refinement
 │
-└─ Draft scatter‑plot (based on the initial tables)
-    └─ Refine scatter‑plot (incorporate data produced by any simulation or literature search)
-        └─ Comprehensive scatter‑plot (final result)
+└─ Draft scatter-plot (based on the initial tables)
+    ├─ Normalization/ standardization of plotted variables (so axes are interpretable)
+    ├─ Overlay feasibility constraints (so “best” does not mean “impossible”)
+    │   ├─ Hardware-agnostic constraints (interface envelopes, power/thermal limits, I/O limits)
+    │   ├─ Resource-lean constraints (runtime limits, measurement limits, tooling limits)
+    │   └─ Low-maintenance constraints (calibration frequency, drift budgets, failure modes)
+    └─ Refine scatter-plot (incorporate data produced by any simulation or literature/availability search)
+        ├─ Interpolation (in-domain completion; explicitly bounded by evidence)
+        ├─ Strategic extrapolation (out-of-domain hypotheses, but with guardrails)
+        │   ├─ Assumption-explicit forecasting (what must remain true for the extrapolation to hold)
+        │   ├─ Sensitivity analysis (which parameters dominate the extrapolated claim)
+        │   ├─ Uncertainty tagging (error bars, confidence regions, scenario bands)
+        │   └─ “Repair move” if extrapolation dominates:
+        │       ├─ expand the dataset (new measurements, new sources)
+        │       ├─ increase model fidelity (only where it changes the decision)
+        │       └─ narrow the claim (re-scope to the domain where evidence exists)
+        ├─ Materials + stack refinement loop (feasibility converges alongside performance)
+        │   ├─ Re-run best materials availability search (substitutions, alternates, constraints)
+        │   └─ Re-validate adhesion layers/ diffusion barriers/ other barriers vs process window
+        ├─ Plug-and-play readiness check (integration cost treated as a first-class metric)
+        │   ├─ Interface standardization (mechanical/electrical/software, as applicable)
+        │   ├─ Minimal-step bring-up + self-test hooks (where feasible)
+        │   └─ Documentation artifacts (checklists, parameter defaults, “known-good” configs)
+        └─ Comprehensive scatter-plot (final result)
+            ├─ Exportable decision artifacts (tables, heatmaps, constraints checklist, BOM notes)
+            └─ Shortlisted candidates (hardware-agnostic, resource-lean, low-maintenance, plug-and-play)
 ```
 
 ---
@@ -250,11 +314,104 @@ Resource-lean Hardware Engineering Strategy
 │
 ├─ Resource-lean Fabrication Materials & Processes
 │   ├─ Cardboard, corrugated paper, double-sided tape (cheap, biodegradable)
+│   ├─ Modular origami-inspired foldable patterns designed in Blender
 │   ├─ Water-based adhesives/ water-less dry-fit joints
 │   ├─ Low-cost sheet plastics (PET, acetate) for moisture barriers
 │   ├─ Hobby-grade 3-D printing (PLA/ABS) for functional hinges & enclosures
 │   ├─ Laser-cutting from open-source SVG/DXF (Inkscape) → inexpensive batch cuts
-│   ├─ Modular origami-inspired foldable patterns designed in Blender
+│   ├─ Low-cost LASER-cut sheet metal & sheet-stock (2.5-D → folded-3-D substitute for expensive CNC-machined parts)
+│   │   ├─ Why it replaces many CNC (computer numerical control) 3-D parts
+│   │   │   ├─ Re-parameterize “bulk” 3-D into “developable” 2-D profiles + bends + fasteners (sheet-metal origami/ kirigami)
+│   │   │   ├─ Use folds, hems, beads, and flanges to raise stiffness via section-modulus leverage (geometry beats mass)
+│   │   │   ├─ Replace pockets/fillets with bend radii + relief cuts; keep load paths in-plane, then “lift” with bends
+│   │   │   └─ Build self-aligning assemblies: tab-and-slot, captive features, and bend-up datums (jigless registration)
+│   │   ├─ Sheet metals commonly LASER-cut (low-cost when thickness stays in standard shop windows)
+│   │   │   ├─ Mild steel/ low-carbon steel (≈0.5–6 mm typical) – cheapest structural sheet for brackets and frames
+│   │   │   ├─ Stainless steel (≈0.3–6 mm) – corrosion resistance; strong thin panels; clean edges with good settings
+│   │   │   ├─ Aluminum (≈0.5–6 mm; fiber LASER preferred) – lightweight + thermal spreaders; watch dross and reflectivity
+│   │   │   ├─ Spring steel (≈0.1–1 mm) – clips, compliant springs, EMI (electromagnetic interference) fingers
+│   │   │   ├─ Brass/bronze (thin) – aesthetic panels, low-spark hardware, RF shielding
+│   │   │   └─ Copper (thin; reflective + very conductive) – bus bars and shields; fiber LASER, or waterjet if reflectivity dominates
+│   │   ├─ Non-metal sheet materials eligible for LASER cutting (often cheaper and faster than machining)
+│   │   │   ├─ Acrylic (polymethyl methacrylate, PMMA) – clean CO₂-LASER edges; optical windows; light pipes; covers
+│   │   │   ├─ PET/ PETG (polyethylene terephthalate/ glycol-modified) – guards, flexures; thin compliant frames
+│   │   │   ├─ Polyimide (Kapton) film – insulation gaskets, flexible-circuit substrates, thermal/electrical barriers (thin)
+│   │   │   ├─ FR-4 (flame-retardant glass-epoxy laminate) – adapter plates and stiffeners; needs fume control + conservative settings
+│   │   │   ├─ Plywood/MDF/bamboo veneer – enclosures and jigs; seal edges for moisture stability
+│   │   │   └─ Cardboard/paper – iteration-speed king; fold patterns; immediately compatible with your origami modules above
+│   │   ├─ Materials to avoid on a typical shop LASER (and what to do instead so the design still “works”)
+│   │   │   ├─ PVC (polyvinyl chloride) – corrosive chlorine chemistry; do not LASER-cut → switch to PET/PETG/acrylic, or waterjet
+│   │   │   ├─ Acetal (polyoxymethylene, POM/Delrin) – formaldehyde fumes → route/CNC mill, or substitute PETG/nylon sheet
+│   │   │   ├─ Carbon-fiber/epoxy sheet – hazardous dust/fumes → waterjet + sealed edge finishing, or swap to G-10/FR-4 where suitable
+│   │   │   └─ Thick polycarbonate – tends to char/yellow → CNC route/waterjet, or “change identity” to acrylic if optical clarity is needed
+│   │   ├─ Design-for-Manufacturability (DFM) rules that keep LASER-cut parts genuinely “low cost”
+│   │   │   ├─ Kerf compensation: offset geometry by kerf width; always include a kerf coupon (same material, same thickness) per order
+│   │   │   ├─ Bend reliefs: prevent corner tearing; add dogbones/slots at bend terminations; avoid trapped radii
+│   │   │   ├─ Bend allowance math: K-factor tables; keep inside bend radius ≥ material thickness when possible for repeatability
+│   │   │   ├─ Feature sizing: avoid holes < 1× thickness; avoid hole-to-edge < 1× thickness; avoid ultra-thin webs
+│   │   │   ├─ Cost drivers: pierce count, micro-features, and tight tolerances → consolidate holes, use shared cut-lines, and relax where safe
+│   │   │   └─ Heat-affected zone (HAZ): keep critical springs away from cut edges; specify deburr/tumble, and plan for edge rounding
+│   │   ├─ Assembly patterns that “recreate 3-D” cheaply (and stay serviceable)
+│   │   │   ├─ Tabs + slots + bend-up flanges → self-fixturing chassis (no custom fixtures needed)
+│   │   │   ├─ Rivets, threaded inserts, and self-clinching fasteners → repeatable joints + reworkability
+│   │   │   ├─ Spot weld/ braze/ solder (thin metals) when fasteners are too bulky or when conductivity is required
+│   │   │   ├─ Captive nuts + access windows → tool-friendly field service and fast teardown
+│   │   │   └─ Hybrid builds: LASER-cut “skeleton plates” + 3-D-printed nodes (directly compatible with your tensegrity node concept)
+│   │   ├─ Where sheet LASER cutting is a performance-per-dollar win over CNC
+│   │   │   ├─ Enclosures, brackets, sensor mounts, battery trays, panelized fixtures, and alignment combs
+│   │   │   ├─ Thermal spreaders/heat shields: aluminum/copper plates with vent patterns and fold-up stand-offs
+│   │   │   ├─ EMI shields: folded cans, spring fingers, ground tabs (spring steel or stainless)
+│   │   │   └─ Fluidics/optics: baffles, apertures, slit masks, and modular frames for tape-based or PET-based microfluidics
+│   │   └─ File/format pipeline (stays consistent with the rest of your stack)
+│   │       ├─ Parametric patterns in Blender/GDSTK → DXF/SVG export (same “single source of truth” geometry idea)
+│   │       ├─ Encode bend lines as etches + include part IDs; add kerf + bend coupons on every sheet
+│   │       └─ Version-control cut files + bend notes + assembly drawings in GitHub alongside simulation + firmware
+│   ├─ DIY metal-rod-based electrical discharge machining (EDM) using re-purposed 3-D printer motion parts (low-cost “spark erosion” for hard-to-machine metals)
+│   │   ├─ High-school intuition (what it is, in plain terms)
+│   │   │   ├─ A metal rod (the electrode) approaches the metal part, without quite touching it
+│   │   │   ├─ Short electrical sparks jump the tiny gap through a liquid (the dielectric), and each spark removes a microscopic crater
+│   │   │   ├─ The liquid cools the spot and flushes debris; the machine “feeds” the rod to keep sparking stable rather than shorting
+│   │   │   └─ Net effect: you “burn” a hole/slot/cavity into conductive material, especially when cutters would chatter or dull
+│   │   ├─ Graduate-level view (physics + control, still resource-lean)
+│   │   │   ├─ Material removal is pulsed thermo-plasma erosion: per-pulse energy Eₚ ≈ ∫ V(t)·I(t) dt drives melt/vapor + ejection
+│   │   │   ├─ Closed-loop gap control (servo): regulate spark-gap via measured gap voltage/current, preventing sustained arcs and hard shorts
+│   │   │   ├─ Stability levers: duty cycle (on/off time), current limit, flushing pressure, debris conductivity, and electrode wear dynamics
+│   │   │   └─ Surface integrity lever: trade removal rate vs “white layer”/recast and microcracking via lower pulse energy + better flushing
+│   │   ├─ Why “metal-rod-based” EDM is a sweet spot for DIY
+│   │   │   ├─ 1-axis plunge/sinker EDM: simplest motion stack (just Z) → holes, pockets, internal corners, broken-tap removal
+│   │   │   ├─ Rod or tube electrode options: solid rod for stiffness; hollow tube for flushing and faster deep holes
+│   │   │   └─ Electrode materials (choose by wear + machinability): copper, graphite, brass, tungsten, or composite stacks
+│   │   ├─ 3-D printer parts you can re-use (cost control through re-parameterization)
+│   │   │   ├─ Z-axis mechanics: stepper motor + lead screw + linear rails + anti-backlash nut → precise micro-feed toward the work
+│   │   │   ├─ Control electronics: spare 3-D printer mainboard or GRBL-style controller for deterministic motion and limit switches
+│   │   │   ├─ Structure: printer gantry/frame becomes the EDM head carriage (add splash shielding rather than rebuilding a mill frame)
+│   │   │   └─ Optional spindle: slow rotation of the rod/tube electrode to stabilize debris evacuation and reduce taper in deep holes
+│   │   ├─ Dielectric + flushing (cheap choices, but do not skip process hygiene)
+│   │   │   ├─ Dielectric fluid: deionized water (clean + cheap) or EDM oil (often better finish, but higher fire/ventilation burden)
+│   │   │   ├─ Flushing loop: small pump + nozzle + settling/filter stage; recirculate, because debris conductivity destabilizes sparks
+│   │   │   └─ Waste handling: treat slurry as metal-contaminated waste; settle solids and avoid pouring fines into drains
+│   │   ├─ When EDM beats “resource-lean CNC” in practice
+│   │   │   ├─ Hardened steels, carbides (where applicable), and other difficult-to-cut alloys (reduce tool-cost burn rate)
+│   │   │   ├─ Deep, small holes; narrow slots; sharp internal corners; removing broken taps/drills without destroying the parent part
+│   │   │   └─ Features on already-heat-treated parts where you want to avoid rework cycles and expensive cutters
+│   │   ├─ What it cannot do (and how to make it true by changing the material/system identity)
+│   │   │   ├─ Non-conductors: EDM needs electrical conductivity
+│   │   │   │   ├─ Make it “EDM-eligible” by adding a sacrificial conductive coating/foil, or by embedding a conductive starter insert
+│   │   │   │   └─ If coating changes the part’s function/identity (e.g., dielectric surface), treat it as a temporary process layer and remove it
+│   │   │   └─ Large bulk removal: EDM is not a bulk hogging process → rough with LASER-cut sheet/fab, then EDM only the hard features
+│   │   ├─ Safety & compliance (do not treat this as benign hobby electronics)
+│   │   │   ├─ Electrical: high-energy pulsed power, conductive fluids, and wet environments → isolation, fusing, and grounded enclosures
+│   │   │   ├─ Fire/air: oil mist, vapor, and hot particles → ventilation, splash control, and conservative duty cycles
+│   │   │   ├─ EMI (electromagnetic interference): pulsed currents radiate → twisted pairs, short leads, shielding, and clean grounding topology
+│   │   │   └─ Documentation: record dielectric, pulse settings, and observed stability so the process is reproducible and reviewable
+│   │   ├─ Open-source anchor points (start from a community baseline instead of reinventing everything)
+│   │   │   ├─ OpenEDM ecosystem – community-driven compact EDM machine efforts (wire and plunge directions)
+│   │   │   ├─ Open-source EDM pulse generator/ power-supply modules (use as a reference architecture, even if you redesign)
+│   │   │   └─ Maker precedent: “3-D printer as EDM” proof-of-concept builds; useful for validating the concept before refining the process
+│   │   └─ File/format pipeline (stay consistent with your repo-first strategy)
+│   │       ├─ Geometry: define electrode profile and target cavity in CAD; export 2-D/3-D references into the same GitHub repo
+│   │       ├─ Motion: treat EDM as a constrained toolpath problem (often 1-axis), log Z vs time + spark telemetry for debugging
+│   │       └─ Process notebooks: store “settings recipes” (dielectric conductivity, pulse parameters, feed gains) as versioned YAML/JSON
 │   ├─ Tape-based Engineering Solutions
 │   │   ├─ Tape-based microfluidics
 │   │   │   ├─ Define channels by stacking/laminating double-sided adhesive tape
