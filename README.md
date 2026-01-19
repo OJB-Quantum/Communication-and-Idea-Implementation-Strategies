@@ -338,7 +338,7 @@ Resource-lean Hardware Engineering Strategy
 │   │   │   ├─ Polyimide (Kapton) film – insulation gaskets, flexible-circuit substrates, thermal/electrical barriers (thin)
 │   │   │   ├─ FR-4 (flame-retardant glass-epoxy laminate) – adapter plates and stiffeners; needs fume control + conservative settings
 │   │   │   ├─ Plywood/MDF/bamboo veneer – enclosures and jigs; seal edges for moisture stability
-│   │   │   └─ Cardboard/paper – iteration-speed king; fold patterns; immediately compatible with your origami modules above
+│   │   │   └─ Cardboard/paper – iteration-speed king; fold patterns
 │   │   ├─ Materials to avoid on a typical shop LASER (and what to do instead so the design still “works”)
 │   │   │   ├─ PVC (polyvinyl chloride) – corrosive chlorine chemistry; do not LASER-cut → switch to PET/PETG/acrylic, or waterjet
 │   │   │   ├─ Acetal (polyoxymethylene, POM/Delrin) – formaldehyde fumes → route/CNC mill, or substitute PETG/nylon sheet
@@ -356,13 +356,13 @@ Resource-lean Hardware Engineering Strategy
 │   │   │   ├─ Rivets, threaded inserts, and self-clinching fasteners → repeatable joints + reworkability
 │   │   │   ├─ Spot weld/ braze/ solder (thin metals) when fasteners are too bulky or when conductivity is required
 │   │   │   ├─ Captive nuts + access windows → tool-friendly field service and fast teardown
-│   │   │   └─ Hybrid builds: LASER-cut “skeleton plates” + 3-D-printed nodes (directly compatible with your tensegrity node concept)
+│   │   │   └─ Hybrid builds: LASER-cut “skeleton plates” + 3-D-printed nodes 
 │   │   ├─ Where sheet LASER cutting is a performance-per-dollar win over CNC
 │   │   │   ├─ Enclosures, brackets, sensor mounts, battery trays, panelized fixtures, and alignment combs
 │   │   │   ├─ Thermal spreaders/heat shields: aluminum/copper plates with vent patterns and fold-up stand-offs
 │   │   │   ├─ EMI shields: folded cans, spring fingers, ground tabs (spring steel or stainless)
 │   │   │   └─ Fluidics/optics: baffles, apertures, slit masks, and modular frames for tape-based or PET-based microfluidics
-│   │   └─ File/format pipeline (stays consistent with the rest of your stack)
+│   │   └─ File/format pipeline 
 │   │       ├─ Parametric patterns in Blender/GDSTK → DXF/SVG export (same “single source of truth” geometry idea)
 │   │       ├─ Encode bend lines as etches + include part IDs; add kerf + bend coupons on every sheet
 │   │       └─ Version-control cut files + bend notes + assembly drawings in GitHub alongside simulation + firmware
@@ -408,7 +408,7 @@ Resource-lean Hardware Engineering Strategy
 │   │   │   ├─ OpenEDM ecosystem – community-driven compact EDM machine efforts (wire and plunge directions)
 │   │   │   ├─ Open-source EDM pulse generator/ power-supply modules (use as a reference architecture, even if you redesign)
 │   │   │   └─ Maker precedent: “3-D printer as EDM” proof-of-concept builds; useful for validating the concept before refining the process
-│   │   └─ File/format pipeline (stay consistent with your repo-first strategy)
+│   │   └─ File/format pipeline
 │   │       ├─ Geometry: define electrode profile and target cavity in CAD; export 2-D/3-D references into the same GitHub repo
 │   │       ├─ Motion: treat EDM as a constrained toolpath problem (often 1-axis), log Z vs time + spark telemetry for debugging
 │   │       └─ Process notebooks: store “settings recipes” (dielectric conductivity, pulse parameters, feed gains) as versioned YAML/JSON
