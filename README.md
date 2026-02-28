@@ -32,7 +32,8 @@ Communication Strategy Tree - by Onri
 │  ├─ Theoretically – model-backed reasoning
 │  ├─ Suppose – assumed premise for exploration
 │  ├─ If it were any different – counterfactual premise
-│  └─ On the flip side – alternative-outcome contrast
+│  ├─ On the flip side – alternative-outcome contrast
+│  └─ Conversely – inverse or opposing relation
 │
 ├─ Methodological Lens
 │  ├─ Critically – assumption-checking evaluation
