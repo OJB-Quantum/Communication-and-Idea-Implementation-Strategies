@@ -10,63 +10,65 @@ Communication Strategy Tree - by Onri
 ```
 ├─ Reality Alignment
 │  ├─ Literally – exact portrayal
-│  ├─ Faithfully – integrity-anchored depiction
+│  ├─ Faithfully – integrity-anchored portrayal
 │  ├─ Metaphorically – figurative framing
-│  └─ In its direct or true form – unmediated, canonical phrasing
+│  └─ In its direct or true form – unmediated phrasing
 │
 ├─ Degree of Certainty
-│  ├─ Perhaps – tentative probability
-│  ├─ Arguably – defensible, yet contestable, speaker-oriented epistemic stance (hedged assertion)
-│  ├─ Relatively – context-bound qualification
-│  ├─ Reasonably – logically justified, moderately confident
-│  ├─ Plausibly – appears possible or credible given current knowledge
-│  └─ Reliably – with consistent, repeatable outcomes under similar conditions
+│  ├─ Perhaps – tentative likelihood
+│  ├─ Arguably – defensible, contestable claim
+│  ├─ Relatively – context-bound qualifier
+│  ├─ Reasonably – justified, moderate confidence
+│  ├─ Plausibly – credible given evidence
+│  └─ Reliably – repeatable under similar conditions
 │
-├─ Extent/ Completeness
-│  ├─ Virtually – almost wholly (≈ 99 %)
-│  ├─ Practically – nearly, within pragmatic limits (≈ 95 %)
-│  └─ Effectively – operationally equivalent in outcome (≈ 95–99 %), results-focused
+├─ Extent/Completeness
+│  ├─ Virtually – almost entirely (≈ 99 %)
+│  ├─ Practically – nearly, within limits (≈ 95 %)
+│  └─ Effectively – same outcome in practice (≈ 95–99 %)
 │
-├─ Modal/ Counterfactual Stance
-│  ├─ Hypothetically – speculative scenario testing
-│  ├─ Theoretically – arithmetically supported, by logic or data-pattern model
-│  ├─ Suppose – assumed premise posited for exploration
-│  ├─ If it were any different – counterfactual premise introduction
-│  └─ On the flip side – alternative-outcome contrast
+├─ Modal/Counterfactual Stance
+│  ├─ Hypothetically – speculative scenario test
+│  ├─ Theoretically – model-backed reasoning
+│  ├─ Suppose – assumed premise for exploration
+│  ├─ If it were any different – counterfactual premise
+│  ├─ On the flip side – alternative-outcome contrast
+│  └─ Conversely – inverse or opposing relation
 │
 ├─ Methodological Lens
-│  ├─ Critically – careful, evidence-weighing evaluation of assumptions, sources, causal claims, and alternatives
-│  ├─ Analytically – evidence-weighted derivation (systematic)
-│  ├─ Coherently – internally consistent, globally structured, logically connected delivery
-│  ├─ Systematically – step-wise, protocol-driven approach
+│  ├─ Critically – assumption-checking evaluation
+│  ├─ Analytically – evidence-weighted derivation
+│  ├─ Coherently – logically connected delivery
+│  ├─ Systematically – protocol-driven steps
 │  ├─ Strategically – purpose-aligned planning
-│  ├─ At the implementation level – code-/hardware-layer perspective
-│  ├─ Organically – emerging naturally from context without forced structure
-│  └─ In other words – explicit rephrasing signal that restates the same idea with different wording, often simpler or more concrete, to tighten understanding and highlight equivalence
+│  ├─ At the implementation level – code-/hardware-layer view
+│  ├─ Organically – context-driven emergence
+│  └─ In other words – explicit restatement cue
 │
 ├─ Conditionality & Contingency
-│  ├─ Conditionally – valid only under stated premise(s)
-│  └─ By default – baseline assumption prior to override
+│  ├─ Conditionally – premise-limited validity
+│  └─ By default – baseline assumption
 │
 ├─ Ideal-Real Spectrum
-│  ├─ Ideally – perfect-world benchmark
+│  ├─ Ideally – perfect benchmark
 │  ├─ Realistically thus far – evidence-based checkpoint
-│  └─ Currently deployed – empirically instantiated case
+│  └─ Currently deployed – in-use instance
 │
 ├─ Temporal & Agency Orientation
-│  ├─ Chronologically – earliest → latest sequencing, order-preserving narration
-│  ├─ From here – forward-linking waypoint marking that subsequent steps, implications, or actions proceed from the current result or discussion state
-│  └─ Proactively – forward-acting, anticipatory intervention
+│  ├─ Chronologically – time-ordered sequence
+│  ├─ From here – forward-step marker
+│  └─ Proactively – anticipatory intervention
 │
 ├─ Attention & Salience
-│  ├─ Notably – signals noteworthy element
-│  ├─ Interestingly – highlights engaging detail
-│  ├─ Of interest – flags relevant point
-│  ├─ For context – situational background primer; activates shared background and constraints, organizes given→new delivery, and aligns with conversational relevance
-│  └─ For reference – anchor or lookup pointer; supplies baseline value, canonical source, exemplar, or specification for comparison without advancing a claim
+│  ├─ Notably – highlights importance
+│  ├─ Perceptibly – detectably evident
+│  ├─ Interestingly – highlights curiosity
+│  ├─ Of interest – flags relevance
+│  ├─ For context – background framing
+│  └─ For reference – lookup anchor
 │
 └─ Norms & Baselines
-   └─ Conventionally – by established practice or standard usage
+   └─ Conventionally – standard practice
 ```
 
 ---
