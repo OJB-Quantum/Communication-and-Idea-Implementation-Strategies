@@ -73,7 +73,8 @@ This tree of terminologies have been helpful to me over the years in the English
 
 ---
 
-A Method of Strategic Extrapolation and Interpolation Using Linguistics - by Onri
+## A Method of Strategic Extrapolation and Interpolation Using Linguistics - by Onri
+
 ```
 └── Useful prefixes and suffixes
     ├── Cryogenic
