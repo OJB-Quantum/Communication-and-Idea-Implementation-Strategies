@@ -5,7 +5,7 @@ This tree of terminologies have been helpful to me over the years in the English
 
 ---
 
-Communication Strategy Tree - by Onri 
+## Communication Strategy Tree - by Onri 
 
 ```
 ├─ Reality Alignment
@@ -73,7 +73,34 @@ Communication Strategy Tree - by Onri
 
 ---
 
-Functional Analogy Categories to Help Explain Virtually Anything to a General Audience - by Onri
+A Method of Strategic Extrapolation and Interpolation Using Linguistics - by Onri
+```
+└── Useful prefixes and suffixes
+    ├── Cryogenic
+    ├── LASER
+    ├── Waterless
+    ├── Water-based
+    ├── Oil-free
+    ├── Maintenance free
+    ├── In-Situ
+    ├── Agnostic
+    ├── Hardware agnostic
+    ├── Foldable
+    ├── Resource lean
+    ├── Embedded
+    ├── Plug-and-play
+    ├── Tape-based
+    ├── Tensegrity-based
+    ├── Cardboard-based
+    ├── Passive
+    ├── Edible
+    ├── Compliant
+    └── On-chip
+```
+    
+---
+
+## Functional Analogy Categories to Help Explain Virtually Anything to a General Audience - by Onri
 
 ```
 └─ Root
@@ -98,7 +125,7 @@ Functional Analogy Categories to Help Explain Virtually Anything to a General Au
 
 ---
 
-Idea Formation Pathways - by Onri 
+## Idea Formation Pathways - by Onri 
 
 ```
 Scaffolding
@@ -183,7 +210,7 @@ Scaffolding
 
 ---
 
-Towards a Resource Lean Hardware Engineering Strategy - by Onri 
+## Towards a Resource Lean Hardware Engineering Strategy - by Onri 
 
 ```
 Resource-lean Hardware Engineering Strategy
