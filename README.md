@@ -88,6 +88,8 @@ Categorical Division of Modifiers by Register
     ├── Monolithic
     └── Off-grid
 ```
+
+By placing function-bearing morphemes from the list, before or after an existing noun that names a method, technology, or approach, researchers can systematically extend the a desired term’s conceptual range while articulating new technical directions with greater precision.
     
 ---
 
