@@ -8,67 +8,51 @@ This tree of terminologies have been helpful to me over the years in the English
 ## Communication Strategy Tree - by Onri 
 
 ```
-├─ Reality Alignment
-│  ├─ Literally – exact portrayal
-│  ├─ Faithfully – integrity-anchored portrayal
-│  ├─ Metaphorically – figurative framing
-│  └─ In its direct or true form – unmediated phrasing
-│
-├─ Degree of Certainty
-│  ├─ Perhaps – tentative likelihood
-│  ├─ Arguably – defensible, contestable claim
-│  ├─ Relatively – context-bound qualifier
-│  ├─ Reasonably – justified, moderate confidence
-│  ├─ Plausibly – credible given evidence
-│  └─ Reliably – repeatable under similar conditions
-│
-├─ Extent/Completeness
-│  ├─ Virtually – almost entirely (≈ 99 %)
-│  ├─ Practically – nearly, within limits (≈ 95 %)
-│  └─ Effectively – same outcome in practice (≈ 95–99 %)
-│
-├─ Modal/Counterfactual Stance
-│  ├─ Hypothetically – speculative scenario test
-│  ├─ Theoretically – model-backed reasoning
-│  ├─ Suppose – assumed premise for exploration
-│  ├─ If it were any different – counterfactual premise
-│  ├─ On the flip side – alternative-outcome contrast
-│  └─ Conversely – inverse or opposing relation
-│
-├─ Methodological Lens
-│  ├─ Critically – assumption-checking evaluation
-│  ├─ Analytically – evidence-weighted derivation
-│  ├─ Coherently – logically connected delivery
-│  ├─ Systematically – protocol-driven steps
-│  ├─ Strategically – purpose-aligned planning
-│  ├─ At the implementation level – code-/hardware-layer view
-│  ├─ Organically – context-driven emergence
-│  └─ In other words – explicit restatement cue
-│
-├─ Conditionality & Contingency
-│  ├─ Conditionally – premise-limited validity
-│  └─ By default – baseline assumption
-│
-├─ Ideal-Real Spectrum
-│  ├─ Ideally – perfect benchmark
-│  ├─ Realistically thus far – evidence-based checkpoint
-│  └─ Currently deployed – in-use instance
-│
-├─ Temporal & Agency Orientation
-│  ├─ Chronologically – time-ordered sequence
-│  ├─ From here – forward-step marker
-│  └─ Proactively – anticipatory intervention
-│
-├─ Attention & Salience
-│  ├─ Notably – highlights importance
-│  ├─ Perceptibly – detectably evident
-│  ├─ Interestingly – highlights curiosity
-│  ├─ Of interest – flags relevance
-│  ├─ For context – background framing
-│  └─ For reference – lookup anchor
-│
-└─ Norms & Baselines
-   └─ Conventionally – standard practice
+Categorical Division of Modifiers by Register
+├── Formal Lexicon
+│   ├── Faithfully (integrity anchored portrayal)
+│   ├── Metaphorically (figurative framing)
+│   ├── In its direct or true form (unmediated phrasing)
+│   ├── Perhaps (tentative likelihood)
+│   ├── Arguably (defensible contestable claim)
+│   ├── Relatively (context bound qualifier)
+│   ├── Reasonably (justified moderate confidence)
+│   ├── Plausibly (credible given evidence)
+│   ├── Reliably (repeatable under similar conditions)
+│   ├── Virtually (almost entirely)
+│   ├── Effectively (same outcome in practice)
+│   ├── Hypothetically (speculative scenario test)
+│   ├── Theoretically (model backed reasoning)
+│   ├── Conversely (inverse or opposing relation)
+│   ├── Critically (assumption checking evaluation)
+│   ├── Analytically (evidence weighted derivation)
+│   ├── Coherently (logically connected delivery)
+│   ├── Systematically (protocol driven steps)
+│   ├── Strategically (purpose aligned planning)
+│   ├── At the implementation level (hardware layer view)
+│   ├── Organically (context driven emergence)
+│   ├── Conditionally (premise limited validity)
+│   ├── By default (baseline assumption)
+│   ├── Ideally (perfect benchmark)
+│   ├── Currently deployed (active instance)
+│   ├── Chronologically (time ordered sequence)
+│   ├── Proactively (anticipatory intervention)
+│   ├── Notably (highlights importance)
+│   ├── Perceptibly (detectably evident)
+│   ├── Interestingly (highlights curiosity)
+│   ├── Of interest (flags relevance)
+│   ├── For context (background framing)
+│   ├── For reference (lookup anchor)
+│   └── Conventionally (standard practice)
+└── Informal Lexicon
+    ├── Literally (exact portrayal)
+    ├── Practically (nearly within limits)
+    ├── Suppose (assumed premise for exploration)
+    ├── If it were any different (counterfactual premise)
+    ├── On the flip side (alternative outcome contrast)
+    ├── In other words (explicit restatement cue)
+    ├── Realistically thus far (evidence based checkpoint)
+    └── From here (forward step marker)
 ```
 
 ---
