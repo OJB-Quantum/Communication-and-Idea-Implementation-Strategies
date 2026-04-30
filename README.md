@@ -84,7 +84,7 @@ Categorical Division of Modifiers by Register
     ├── On-chip
     ├── Autonomous
     ├── Modular
-    ├── Ultra low power
+    ├── Ultra-low-power
     ├── Monolithic
     └── Off-grid
 ```
