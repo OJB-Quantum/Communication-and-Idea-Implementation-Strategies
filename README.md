@@ -17,7 +17,6 @@ Categorical Division of Modifiers by Register
 │   ├── Arguably (defensible contestable claim)
 │   ├── Relatively (context bound qualifier)
 │   ├── Reasonably (justified moderate confidence)
-│   ├── Plausibly (credible given evidence)
 │   ├── Reliably (repeatable under similar conditions)
 │   ├── Virtually (almost entirely)
 │   ├── Effectively (same outcome in practice)
@@ -44,6 +43,7 @@ Categorical Division of Modifiers by Register
 │   ├── For context (background framing)
 │   ├── For reference (lookup anchor)
 │   └── Conventionally (standard practice)
+│
 └── Informal Lexicon
     ├── Literally (exact portrayal)
     ├── Practically (nearly within limits)
