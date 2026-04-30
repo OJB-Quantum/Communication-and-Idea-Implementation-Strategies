@@ -12,7 +12,7 @@ Categorical Division of Modifiers by Register
 ├── Formal Lexicon
 │   ├── Faithfully (integrity anchored portrayal)
 │   ├── Metaphorically (figurative framing)
-│   ├── In its direct or true form (unmediated phrasing)
+│   ├── In its true form (unmediated phrasing)
 │   ├── Perhaps (tentative likelihood)
 │   ├── Arguably (defensible contestable claim)
 │   ├── Relatively (context bound qualifier)
@@ -94,7 +94,7 @@ Categorical Division of Modifiers by Register
         └── Laser-based
 ```        
 
-By placing function-bearing morphemes from the list, before or after an existing noun that names a method, technology, or approach, researchers can systematically extend the a desired term’s conceptual range while articulating new technical directions with greater precision. For example, if you add the term LASER in front of another technical term like "turbopump" or "lithography" or "microscope" or "spintronics", then it results in a real technology like LASER balanced turbopumps, LASER lithography, LASER scanning microscopes, and spintronic LASERs. 
+By placing function-bearing technical modifiers before or after a noun that already names a method, device, material system, or engineering approach, researchers can systematically expand that term’s conceptual range. For example, if you add the term LASER in front of another technical term like "turbopump" or "lithography" or "microscope" or "spintronics", then it results in a real technology like LASER balanced turbopumps, LASER lithography, LASER scanning microscopes, and spintronic LASERs. 
     
 ---
 
