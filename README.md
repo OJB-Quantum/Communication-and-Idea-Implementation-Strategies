@@ -57,7 +57,7 @@ Categorical Division of Modifiers by Register
 
 ---
 
-## A Method of Strategic Extrapolation and Interpolation Using Linguistics - by Onri
+## A Method of Strategic Extrapolation and Interpolation Using Linguistics - by Onri Jay Benally
 (Based on morphological synthesis)
 
 ```
@@ -89,7 +89,7 @@ Categorical Division of Modifiers by Register
     └── Off-grid
 ```
 
-By placing function-bearing morphemes from the list, before or after an existing noun that names a method, technology, or approach, researchers can systematically extend the a desired term’s conceptual range while articulating new technical directions with greater precision.
+By placing function-bearing morphemes from the list, before or after an existing noun that names a method, technology, or approach, researchers can systematically extend the a desired term’s conceptual range while articulating new technical directions with greater precision. For example, if you add the term LASER in front of another technical term like "turbopump" or "lithography" or "microscope" or "spintronics", then it results in a real technology like LASER balanced turbopumps, LASER lithography, LASER scanning microscopes, and spintronic LASERs. 
     
 ---
 
