@@ -79,6 +79,7 @@ This tree of terminologies have been helpful to me over the years in the English
 └── Useful prefixes and suffixes
     ├── Cryogenic
     ├── LASER
+    ├── Resource lean
     ├── Waterless
     ├── Water-based
     ├── Oil-free
@@ -87,7 +88,6 @@ This tree of terminologies have been helpful to me over the years in the English
     ├── Agnostic
     ├── Hardware agnostic
     ├── Foldable
-    ├── Resource lean
     ├── Embedded
     ├── Plug-and-play
     ├── Tape-based
