@@ -12,7 +12,7 @@ Categorical Division of Modifiers by Register
 ├── Formal Lexicon
 │   ├── Faithfully (integrity anchored portrayal)
 │   ├── Metaphorically (figurative framing)
-│   ├── In its direct or true form (unmediated phrasing)
+│   ├── In its true form (unmediated phrasing)
 │   ├── Perhaps (tentative likelihood)
 │   ├── Arguably (defensible contestable claim)
 │   ├── Relatively (context bound qualifier)
@@ -57,37 +57,44 @@ Categorical Division of Modifiers by Register
 
 ---
 
-## A Method of Strategic Extrapolation and Interpolation Using Linguistics - by Onri
-(Based on morphological synthesis)
+## Strategic Extrapolation and Interpolation Through Technical Modifiers
+### A Linguistic Method for Engineering Ideation - by Onri Jay Benally
+#### (Based on morphological synthesis)
 
 ```
-└── Useful prefixes and suffixes
-    ├── Cryogenic
-    ├── Light Amplification by Stimulated Emission of Radiation (LASER)
-    ├── Resource lean
-    ├── Waterless
-    ├── Water-based
-    ├── Oil-free
-    ├── Maintenance-free
-    ├── In-Situ
-    ├── Agnostic
-    ├── Hardware agnostic
-    ├── Foldable
-    ├── Embedded
-    ├── Plug-and-play
-    ├── Tape-based
-    ├── Tensegrity-based
-    ├── Cardboard-based
-    ├── Passive
-    ├── Edible
-    ├── Compliant
-    ├── On-chip
-    ├── Autonomous
-    ├── Modular
-    ├── Ultra low power
-    ├── Monolithic
-    └── Off-grid
-```
+└── Function-bearing technical modifiers
+    ├── Environmental and physical-regime modifiers
+    │   ├── Cryogenic
+    │   ├── In situ
+    │   ├── On-chip
+    │   └── Off-grid
+    ├── Resource and sustainability modifiers
+    │   ├── Resource-lean
+    │   ├── Waterless
+    │   ├── Water-based
+    │   ├── Oil-free
+    │   ├── Maintenance-free
+    │   └── Ultra-low-power
+    ├── Architectural and integration modifiers
+    │   ├── Embedded
+    │   ├── Modular
+    │   ├── Monolithic
+    │   ├── Plug-and-play
+    │   ├── Hardware-agnostic
+    │   └── Autonomous
+    ├── Structural and material-basis modifiers
+    │   ├── Foldable
+    │   ├── Tape-based
+    │   ├── Tensegrity-based
+    │   ├── Cardboard-based
+    │   ├── Passive
+    │   ├── Compliant
+    │   └── Edible
+    └── Optical and energy-transfer modifiers
+        └── Laser-based
+```        
+
+By placing function-bearing technical modifiers before or after a noun that already names a method, device, material system, or engineering approach, researchers can systematically expand that term’s conceptual range. For example, if you add the term LASER in front of another technical term like "turbopump" or "lithography" or "microscope" or "spintronics", then it results in a real technology like LASER balanced turbopumps, LASER lithography, LASER scanning microscopes, and spintronic LASERs. 
     
 ---
 
