@@ -58,16 +58,17 @@ Categorical Division of Modifiers by Register
 ---
 
 ## A Method of Strategic Extrapolation and Interpolation Using Linguistics - by Onri
+(Based on morphological synthesis)
 
 ```
 └── Useful prefixes and suffixes
     ├── Cryogenic
-    ├── LASER
+    ├── Light Amplification by Stimulated Emission of Radiation (LASER)
     ├── Resource lean
     ├── Waterless
     ├── Water-based
     ├── Oil-free
-    ├── Maintenance free
+    ├── Maintenance-free
     ├── In-Situ
     ├── Agnostic
     ├── Hardware agnostic
@@ -80,7 +81,12 @@ Categorical Division of Modifiers by Register
     ├── Passive
     ├── Edible
     ├── Compliant
-    └── On-chip
+    ├── On-chip
+    ├── Autonomous
+    ├── Modular
+    ├── Ultra low power
+    ├── Monolithic
+    └── Off-grid
 ```
     
 ---
