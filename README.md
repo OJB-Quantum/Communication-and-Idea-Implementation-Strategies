@@ -58,8 +58,8 @@ Categorical Division of Modifiers by Register
 ---
 
 ## Strategic Extrapolation and Interpolation Through Technical Modifiers
-## A Linguistic Method for Engineering Ideation - by Onri Jay Benally
-### (Based on morphological synthesis)
+### A Linguistic Method for Engineering Ideation - by Onri Jay Benally
+#### (Based on morphological synthesis)
 
 ```
 └── Function-bearing technical modifiers
